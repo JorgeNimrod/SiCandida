@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiCandi_Library", "SiCandi_Library\SiCandi_Library.csproj", "{42BFA7EB-1213-4C33-A8CE-317DC8284EEA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiCandi2017", "SiCandi2017\SiCandi2017.csproj", "{94215A17-1BE2-44D2-A621-E5683FBE0678}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiCandiWeb2017", "SiCandiWeb2017\SiCandiWeb2017.csproj", "{F2308B9E-2BD6-498C-B48D-6822F8D7C939}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{42BFA7EB-1213-4C33-A8CE-317DC8284EEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42BFA7EB-1213-4C33-A8CE-317DC8284EEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42BFA7EB-1213-4C33-A8CE-317DC8284EEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42BFA7EB-1213-4C33-A8CE-317DC8284EEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94215A17-1BE2-44D2-A621-E5683FBE0678}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94215A17-1BE2-44D2-A621-E5683FBE0678}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94215A17-1BE2-44D2-A621-E5683FBE0678}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94215A17-1BE2-44D2-A621-E5683FBE0678}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2308B9E-2BD6-498C-B48D-6822F8D7C939}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2308B9E-2BD6-498C-B48D-6822F8D7C939}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2308B9E-2BD6-498C-B48D-6822F8D7C939}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2308B9E-2BD6-498C-B48D-6822F8D7C939}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
