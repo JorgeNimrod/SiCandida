@@ -119,5 +119,47 @@ namespace SiCandi2017.Controlador
                 throw;
             }
         }
+
+        public static void Like(int pkCandidata)
+        {
+            Candidata nCandidata = ManejoCandidata.getById(pkCandidata);
+            try
+            {
+                using (var ctx = new DataModel())
+                {
+                    int likes = nCandidata.iLike;
+                    int like = 1;
+                    likes += like;
+
+                    nCandidata.iLike = likes;
+                    ctx.Candidatas.Attach(nCandidata);
+                    ctx.Entry(nCandidata).State = EntityState.Modified;
+                    ctx.SaveChanges();
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        public static List<Candidata> Buscar(string valor, Boolean Status, string mun)
+        {
+            try
+            {
+                using (var ctx = new DataModel())
+                {
+                    return ctx.Candidatas.Where(r => r.bStatus == Status && r.sNombreCompleto.Contains(valor) && r.fkMunicipio.sNombre.Contains(mun))
+                        .OrderByDescending(r => r.iLike)
+                        .ToList();
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
     }
 }

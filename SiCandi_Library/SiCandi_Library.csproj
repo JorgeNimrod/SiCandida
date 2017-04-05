@@ -62,6 +62,10 @@
     <Compile Include="Migrations\201704040535429_INICIAL.Designer.cs">
       <DependentUpon>201704040535429_INICIAL.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201704051914042_INICIAL1.cs" />
+    <Compile Include="Migrations\201704051914042_INICIAL1.Designer.cs">
+      <DependentUpon>201704051914042_INICIAL1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Modelo\Candidata.cs" />
     <Compile Include="Modelo\DataModel.cs" />
@@ -80,6 +84,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201704040535429_INICIAL.resx">
       <DependentUpon>201704040535429_INICIAL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201704051914042_INICIAL1.resx">
+      <DependentUpon>201704051914042_INICIAL1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
