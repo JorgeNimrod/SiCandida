@@ -7,12 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 using AForge.Video;
 using AForge.Video.DirectShow;
 using SiCandi2017.Controlador;
 using SiCandi2017.Comun;
 using SiCandi_Library.Modelo;
 using System.Drawing.Imaging;
+using System.Text.RegularExpressions;
+
 
 namespace SiCandi2017.Vistas
 {
@@ -199,6 +202,91 @@ namespace SiCandi2017.Vistas
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void txtNombre_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+        }
+        public static bool ValidarEmail(string email)
+        {
+            string expresion = "\\w+([-+.']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*";
+            if (Regex.IsMatch(email, expresion))
+            {
+                if (Regex.Replace(email, expresion, String.Empty).Length == 0)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            else
+            {
+                return false;
+            }
+        }
+        /// <summary>
+        /// evento que llama mandar el metodo de validar correo
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+
+        /// <summary>
+        /// metodo que valida el curp
+        /// </summary>
+        /// <param name="email"></param>
+        /// <returns></returns>
+
+        public static bool ValidarCurp(string curp)
+        {
+            string expresion = "^.*(?=.{18})(?=.*[0-9])(?=.*[A-ZÑ]).*$";
+            if (Regex.IsMatch(curp, expresion))
+            {
+                if (Regex.Replace(curp, expresion, String.Empty).Length == 0)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        private void txtCurp_Leave(object sender, EventArgs e)
+        {
+            if (ValidarCurp(txtCurp.Text))
+            {
+
+            }
+            else
+            {
+                MessageBox.Show("Curp No Valida Debe de tener el formato : BOMC870421HDGRLS05, " +
+                    "Favor Sellecione Un Curp Valido", "Validacion De Curp", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                txtCorreoElectronico.SelectAll();
+                txtCorreoElectronico.Focus();
+            }
+        }
+
+        private void txtCorreoElectronico_Leave(object sender, EventArgs e)
+        {
+            if (ValidarEmail(txtCorreoElectronico.Text))
+            {
+
+            }
+            else
+            {
+                MessageBox.Show("Direccion De Correo Electronico No Valido Debe de tener el formato : correo@gmail.com, " +
+                    "Favor Sellecione Un Correo Valido", "Validacion De Correo", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                txtCorreoElectronico.SelectAll();
+                txtCorreoElectronico.Focus();
+            }
         }
     }
 }

@@ -76,7 +76,7 @@ namespace SiCandi2017.Vistas
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-            frmBuscarMunicipio v = new Vistas.frmBuscarMunicipio();
+            frmBuscarMunicipio v = new frmBuscarMunicipio();
             v.ShowDialog();
         }
 

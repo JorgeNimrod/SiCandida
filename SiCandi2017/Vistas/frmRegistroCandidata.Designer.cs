@@ -30,10 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.cmbCamara = new System.Windows.Forms.ComboBox();
-            this.btnTomarFoto = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
-            this.btnRegistro = new System.Windows.Forms.Button();
-            this.picImagen = new System.Windows.Forms.PictureBox();
             this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.cmbMunicipio = new System.Windows.Forms.ComboBox();
             this.dtpAnioConvocatoria = new System.Windows.Forms.DateTimePicker();
@@ -50,62 +47,43 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnBuscar = new System.Windows.Forms.Button();
             this.ErrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.picImagen)).BeginInit();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.btnRegistro = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnTomarFoto = new System.Windows.Forms.Button();
+            this.picImagen = new System.Windows.Forms.PictureBox();
+            this.btnBuscar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.ErrorProvider)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picImagen)).BeginInit();
             this.SuspendLayout();
             // 
             // cmbCamara
             // 
             this.cmbCamara.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbCamara.FormattingEnabled = true;
-            this.cmbCamara.Location = new System.Drawing.Point(581, 282);
+            this.cmbCamara.Location = new System.Drawing.Point(576, 456);
             this.cmbCamara.Name = "cmbCamara";
             this.cmbCamara.Size = new System.Drawing.Size(214, 26);
             this.cmbCamara.TabIndex = 83;
             // 
-            // btnTomarFoto
-            // 
-            this.btnTomarFoto.Location = new System.Drawing.Point(581, 242);
-            this.btnTomarFoto.Name = "btnTomarFoto";
-            this.btnTomarFoto.Size = new System.Drawing.Size(214, 34);
-            this.btnTomarFoto.TabIndex = 82;
-            this.btnTomarFoto.Text = "Capturar/Finalizar";
-            this.btnTomarFoto.UseVisualStyleBackColor = true;
-            this.btnTomarFoto.Click += new System.EventHandler(this.btnTomarFoto_Click);
-            // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(150, 356);
+            this.btnCancelar.Location = new System.Drawing.Point(150, 518);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(132, 34);
+            this.btnCancelar.Size = new System.Drawing.Size(132, 42);
             this.btnCancelar.TabIndex = 71;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
-            // btnRegistro
-            // 
-            this.btnRegistro.Location = new System.Drawing.Point(12, 356);
-            this.btnRegistro.Name = "btnRegistro";
-            this.btnRegistro.Size = new System.Drawing.Size(132, 34);
-            this.btnRegistro.TabIndex = 70;
-            this.btnRegistro.Text = "Registrar";
-            this.btnRegistro.UseVisualStyleBackColor = true;
-            this.btnRegistro.Click += new System.EventHandler(this.btnRegistro_Click);
-            // 
-            // picImagen
-            // 
-            this.picImagen.Location = new System.Drawing.Point(581, 6);
-            this.picImagen.Name = "picImagen";
-            this.picImagen.Size = new System.Drawing.Size(214, 230);
-            this.picImagen.TabIndex = 81;
-            this.picImagen.TabStop = false;
-            // 
             // txtDescripcion
             // 
-            this.txtDescripcion.Location = new System.Drawing.Point(12, 190);
+            this.txtDescripcion.Location = new System.Drawing.Point(12, 352);
             this.txtDescripcion.Multiline = true;
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.Size = new System.Drawing.Size(552, 160);
@@ -115,52 +93,52 @@
             // cmbMunicipio
             // 
             this.cmbMunicipio.FormattingEnabled = true;
-            this.cmbMunicipio.Location = new System.Drawing.Point(425, 102);
+            this.cmbMunicipio.Location = new System.Drawing.Point(161, 292);
             this.cmbMunicipio.Name = "cmbMunicipio";
-            this.cmbMunicipio.Size = new System.Drawing.Size(140, 28);
+            this.cmbMunicipio.Size = new System.Drawing.Size(404, 28);
             this.cmbMunicipio.TabIndex = 68;
             // 
             // dtpAnioConvocatoria
             // 
-            this.dtpAnioConvocatoria.Location = new System.Drawing.Point(160, 102);
+            this.dtpAnioConvocatoria.Location = new System.Drawing.Point(161, 196);
             this.dtpAnioConvocatoria.Name = "dtpAnioConvocatoria";
-            this.dtpAnioConvocatoria.Size = new System.Drawing.Size(173, 26);
+            this.dtpAnioConvocatoria.Size = new System.Drawing.Size(404, 26);
             this.dtpAnioConvocatoria.TabIndex = 67;
             // 
             // txtCorreoElectronico
             // 
-            this.txtCorreoElectronico.Location = new System.Drawing.Point(160, 70);
+            this.txtCorreoElectronico.Location = new System.Drawing.Point(161, 164);
             this.txtCorreoElectronico.Name = "txtCorreoElectronico";
-            this.txtCorreoElectronico.Size = new System.Drawing.Size(138, 26);
+            this.txtCorreoElectronico.Size = new System.Drawing.Size(404, 26);
             this.txtCorreoElectronico.TabIndex = 65;
             this.txtCorreoElectronico.TextChanged += new System.EventHandler(this.txtCorreoElectronico_TextChanged);
             // 
             // txtNivelEstudios
             // 
-            this.txtNivelEstudios.Location = new System.Drawing.Point(458, 70);
+            this.txtNivelEstudios.Location = new System.Drawing.Point(161, 260);
             this.txtNivelEstudios.Name = "txtNivelEstudios";
-            this.txtNivelEstudios.Size = new System.Drawing.Size(107, 26);
+            this.txtNivelEstudios.Size = new System.Drawing.Size(404, 26);
             this.txtNivelEstudios.TabIndex = 66;
             this.txtNivelEstudios.TextChanged += new System.EventHandler(this.txtNivelEstudios_TextChanged);
             // 
             // dtpFechaNacimiento
             // 
-            this.dtpFechaNacimiento.Location = new System.Drawing.Point(160, 38);
+            this.dtpFechaNacimiento.Location = new System.Drawing.Point(161, 132);
             this.dtpFechaNacimiento.Name = "dtpFechaNacimiento";
-            this.dtpFechaNacimiento.Size = new System.Drawing.Size(180, 26);
+            this.dtpFechaNacimiento.Size = new System.Drawing.Size(404, 26);
             this.dtpFechaNacimiento.TabIndex = 63;
             // 
             // txtCurp
             // 
-            this.txtCurp.Location = new System.Drawing.Point(399, 38);
+            this.txtCurp.Location = new System.Drawing.Point(161, 228);
             this.txtCurp.Name = "txtCurp";
-            this.txtCurp.Size = new System.Drawing.Size(166, 26);
+            this.txtCurp.Size = new System.Drawing.Size(404, 26);
             this.txtCurp.TabIndex = 64;
             this.txtCurp.TextChanged += new System.EventHandler(this.txtCurp_TextChanged);
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(160, 6);
+            this.txtNombre.Location = new System.Drawing.Point(161, 100);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(404, 26);
             this.txtNombre.TabIndex = 62;
@@ -169,7 +147,8 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(340, 105);
+            this.label8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label8.Location = new System.Drawing.Point(13, 295);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(79, 20);
             this.label8.TabIndex = 80;
@@ -178,7 +157,8 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(12, 157);
+            this.label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label7.Location = new System.Drawing.Point(12, 329);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(96, 20);
             this.label7.TabIndex = 79;
@@ -187,7 +167,8 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(12, 105);
+            this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label6.Location = new System.Drawing.Point(13, 199);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(139, 20);
             this.label6.TabIndex = 78;
@@ -196,7 +177,8 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(12, 73);
+            this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label5.Location = new System.Drawing.Point(13, 167);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(144, 20);
             this.label5.TabIndex = 77;
@@ -205,7 +187,8 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 43);
+            this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label4.Location = new System.Drawing.Point(13, 137);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(141, 20);
             this.label4.TabIndex = 76;
@@ -214,7 +197,8 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(315, 73);
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label3.Location = new System.Drawing.Point(13, 263);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(137, 20);
             this.label3.TabIndex = 75;
@@ -223,7 +207,8 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(346, 43);
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label2.Location = new System.Drawing.Point(13, 231);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(47, 20);
             this.label2.TabIndex = 74;
@@ -232,31 +217,106 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(13, 103);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(141, 20);
             this.label1.TabIndex = 73;
             this.label1.Text = "Nombre Completo:";
             // 
-            // btnBuscar
-            // 
-            this.btnBuscar.Location = new System.Drawing.Point(581, 314);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(214, 76);
-            this.btnBuscar.TabIndex = 72;
-            this.btnBuscar.Text = "Buscar";
-            this.btnBuscar.UseVisualStyleBackColor = true;
-            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
-            // 
             // ErrorProvider
             // 
             this.ErrorProvider.ContainerControl = this;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label9.Location = new System.Drawing.Point(156, 32);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(209, 29);
+            this.label9.TabIndex = 91;
+            this.label9.Text = "Agregar candidata";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label10.Location = new System.Drawing.Point(572, 103);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(82, 20);
+            this.label10.TabIndex = 92;
+            this.label10.Text = "Fotografía";
+            // 
+            // btnRegistro
+            // 
+            this.btnRegistro.Location = new System.Drawing.Point(12, 518);
+            this.btnRegistro.Name = "btnRegistro";
+            this.btnRegistro.Size = new System.Drawing.Size(132, 42);
+            this.btnRegistro.TabIndex = 70;
+            this.btnRegistro.Text = "Agregar";
+            this.btnRegistro.UseVisualStyleBackColor = true;
+            this.btnRegistro.Click += new System.EventHandler(this.btnRegistro_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::SiCandi2017.Properties.Resources.NB;
+            this.pictureBox2.Location = new System.Drawing.Point(16, 3);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(95, 82);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 90;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.pictureBox1.Location = new System.Drawing.Point(-2, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(811, 94);
+            this.pictureBox1.TabIndex = 89;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btnTomarFoto
+            // 
+            this.btnTomarFoto.Image = global::SiCandi2017.Properties.Resources.icon_camera_128;
+            this.btnTomarFoto.Location = new System.Drawing.Point(576, 371);
+            this.btnTomarFoto.Name = "btnTomarFoto";
+            this.btnTomarFoto.Size = new System.Drawing.Size(214, 79);
+            this.btnTomarFoto.TabIndex = 82;
+            this.btnTomarFoto.UseVisualStyleBackColor = true;
+            this.btnTomarFoto.Click += new System.EventHandler(this.btnTomarFoto_Click);
+            // 
+            // picImagen
+            // 
+            this.picImagen.Location = new System.Drawing.Point(576, 135);
+            this.picImagen.Name = "picImagen";
+            this.picImagen.Size = new System.Drawing.Size(214, 230);
+            this.picImagen.TabIndex = 81;
+            this.picImagen.TabStop = false;
+            // 
+            // btnBuscar
+            // 
+            this.btnBuscar.Image = global::SiCandi2017.Properties.Resources.magnifier;
+            this.btnBuscar.Location = new System.Drawing.Point(576, 488);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(214, 69);
+            this.btnBuscar.TabIndex = 72;
+            this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // frmRegistroCandidata
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(810, 412);
+            this.BackColor = System.Drawing.Color.Silver;
+            this.ClientSize = new System.Drawing.Size(810, 569);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.cmbCamara);
             this.Controls.Add(this.btnTomarFoto);
             this.Controls.Add(this.btnCancelar);
@@ -288,8 +348,10 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registro Candidata";
             this.Load += new System.EventHandler(this.frmRegistroCandidata_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.picImagen)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ErrorProvider)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picImagen)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -320,5 +382,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.ErrorProvider ErrorProvider;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

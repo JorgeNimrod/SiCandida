@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using SiCandi_Library.Modelo;
 using SiCandi2017.Controlador;
+using SiCandi2017.Vistas;
 
 namespace SiCandi2017.Vistas
 {
@@ -17,8 +18,10 @@ namespace SiCandi2017.Vistas
         public static int PKMUNICIPIO;
         public frmBuscarMunicipio()
         {
-            this.dgvMunicipios.AutoGenerateColumns = false;
+           
+           
             InitializeComponent();
+            this.dgvMunicipios.AutoGenerateColumns = false;
         }
         public void cargarMunicipios()
         {

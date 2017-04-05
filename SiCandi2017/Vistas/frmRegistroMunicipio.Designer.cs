@@ -35,19 +35,24 @@
             this.btnBuscar = new System.Windows.Forms.Button();
             this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.pcbLogo = new System.Windows.Forms.PictureBox();
             this.txtNombreMunicipio = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.ErrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.pcbLogo)).BeginInit();
+            this.pcbLogo = new System.Windows.Forms.PictureBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.ErrorProvider)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbLogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnExaminar
             // 
-            this.btnExaminar.Location = new System.Drawing.Point(127, 218);
+            this.btnExaminar.Location = new System.Drawing.Point(392, 306);
             this.btnExaminar.Name = "btnExaminar";
-            this.btnExaminar.Size = new System.Drawing.Size(167, 27);
+            this.btnExaminar.Size = new System.Drawing.Size(167, 34);
             this.btnExaminar.TabIndex = 43;
             this.btnExaminar.Text = "Examinar";
             this.btnExaminar.UseVisualStyleBackColor = true;
@@ -55,7 +60,7 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(264, 382);
+            this.btnCancelar.Location = new System.Drawing.Point(254, 306);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(132, 34);
             this.btnCancelar.TabIndex = 42;
@@ -65,7 +70,7 @@
             // 
             // btnRegistro
             // 
-            this.btnRegistro.Location = new System.Drawing.Point(24, 382);
+            this.btnRegistro.Location = new System.Drawing.Point(14, 306);
             this.btnRegistro.Name = "btnRegistro";
             this.btnRegistro.Size = new System.Drawing.Size(132, 34);
             this.btnRegistro.TabIndex = 41;
@@ -75,7 +80,7 @@
             // 
             // btnBuscar
             // 
-            this.btnBuscar.Location = new System.Drawing.Point(162, 382);
+            this.btnBuscar.Location = new System.Drawing.Point(152, 306);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(96, 34);
             this.btnBuscar.TabIndex = 40;
@@ -85,7 +90,7 @@
             // 
             // txtDescripcion
             // 
-            this.txtDescripcion.Location = new System.Drawing.Point(24, 274);
+            this.txtDescripcion.Location = new System.Drawing.Point(14, 198);
             this.txtDescripcion.Multiline = true;
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.Size = new System.Drawing.Size(372, 102);
@@ -95,24 +100,17 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(24, 251);
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label3.Location = new System.Drawing.Point(14, 175);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(92, 20);
             this.label3.TabIndex = 38;
             this.label3.Text = "Descripcion";
             // 
-            // pcbLogo
-            // 
-            this.pcbLogo.Location = new System.Drawing.Point(127, 65);
-            this.pcbLogo.Name = "pcbLogo";
-            this.pcbLogo.Size = new System.Drawing.Size(167, 147);
-            this.pcbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pcbLogo.TabIndex = 37;
-            this.pcbLogo.TabStop = false;
-            // 
             // txtNombreMunicipio
             // 
-            this.txtNombreMunicipio.Location = new System.Drawing.Point(20, 30);
+            this.txtNombreMunicipio.Location = new System.Drawing.Point(14, 134);
             this.txtNombreMunicipio.Name = "txtNombreMunicipio";
             this.txtNombreMunicipio.Size = new System.Drawing.Size(372, 26);
             this.txtNombreMunicipio.TabIndex = 36;
@@ -121,7 +119,9 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(20, 7);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(14, 111);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(163, 20);
             this.label1.TabIndex = 35;
@@ -131,11 +131,55 @@
             // 
             this.ErrorProvider.ContainerControl = this;
             // 
+            // pcbLogo
+            // 
+            this.pcbLogo.Location = new System.Drawing.Point(392, 134);
+            this.pcbLogo.Name = "pcbLogo";
+            this.pcbLogo.Size = new System.Drawing.Size(167, 166);
+            this.pcbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pcbLogo.TabIndex = 37;
+            this.pcbLogo.TabStop = false;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label9.Location = new System.Drawing.Point(154, 32);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(209, 29);
+            this.label9.TabIndex = 94;
+            this.label9.Text = "Agregar candidata";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::SiCandi2017.Properties.Resources.NB;
+            this.pictureBox2.Location = new System.Drawing.Point(14, 3);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(95, 82);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 93;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.pictureBox1.Location = new System.Drawing.Point(-4, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(589, 94);
+            this.pictureBox1.TabIndex = 92;
+            this.pictureBox1.TabStop = false;
+            // 
             // frmRegistroMunicipio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(417, 437);
+            this.BackColor = System.Drawing.Color.Silver;
+            this.ClientSize = new System.Drawing.Size(570, 347);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnExaminar);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnRegistro);
@@ -152,8 +196,10 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registro Municipio";
             this.Load += new System.EventHandler(this.frmRegistroMunicipio_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pcbLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ErrorProvider)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbLogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -171,5 +217,8 @@
         private System.Windows.Forms.TextBox txtNombreMunicipio;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ErrorProvider ErrorProvider;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

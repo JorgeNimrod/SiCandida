@@ -28,9 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnSalir = new System.Windows.Forms.Button();
-            this.btnActualizar = new System.Windows.Forms.Button();
-            this.btnBorrar = new System.Windows.Forms.Button();
             this.lblRegistro = new System.Windows.Forms.Label();
             this.ckbStatus = new System.Windows.Forms.CheckBox();
             this.dgvMunicipios = new System.Windows.Forms.DataGridView();
@@ -39,43 +36,22 @@
             this.sDescripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnSalir = new System.Windows.Forms.Button();
+            this.btnActualizar = new System.Windows.Forms.Button();
+            this.btnBorrar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMunicipios)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btnSalir
-            // 
-            this.btnSalir.Location = new System.Drawing.Point(242, 290);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(93, 31);
-            this.btnSalir.TabIndex = 31;
-            this.btnSalir.Text = "Salir";
-            this.btnSalir.UseVisualStyleBackColor = true;
-            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
-            // 
-            // btnActualizar
-            // 
-            this.btnActualizar.Location = new System.Drawing.Point(127, 290);
-            this.btnActualizar.Name = "btnActualizar";
-            this.btnActualizar.Size = new System.Drawing.Size(109, 31);
-            this.btnActualizar.TabIndex = 30;
-            this.btnActualizar.Text = "Actualizar";
-            this.btnActualizar.UseVisualStyleBackColor = true;
-            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
-            // 
-            // btnBorrar
-            // 
-            this.btnBorrar.Location = new System.Drawing.Point(12, 290);
-            this.btnBorrar.Name = "btnBorrar";
-            this.btnBorrar.Size = new System.Drawing.Size(109, 31);
-            this.btnBorrar.TabIndex = 29;
-            this.btnBorrar.Text = "Borrar";
-            this.btnBorrar.UseVisualStyleBackColor = true;
-            this.btnBorrar.Click += new System.EventHandler(this.btnBorrar_Click);
             // 
             // lblRegistro
             // 
             this.lblRegistro.AutoSize = true;
-            this.lblRegistro.Location = new System.Drawing.Point(438, 263);
+            this.lblRegistro.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblRegistro.Location = new System.Drawing.Point(439, 384);
             this.lblRegistro.Name = "lblRegistro";
             this.lblRegistro.Size = new System.Drawing.Size(30, 20);
             this.lblRegistro.TabIndex = 28;
@@ -86,7 +62,8 @@
             this.ckbStatus.AutoSize = true;
             this.ckbStatus.Checked = true;
             this.ckbStatus.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.ckbStatus.Location = new System.Drawing.Point(12, 262);
+            this.ckbStatus.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ckbStatus.Location = new System.Drawing.Point(13, 383);
             this.ckbStatus.Name = "ckbStatus";
             this.ckbStatus.Size = new System.Drawing.Size(75, 24);
             this.ckbStatus.TabIndex = 27;
@@ -101,7 +78,7 @@
             this.pkMunicipio,
             this.sNombre,
             this.sDescripcion});
-            this.dgvMunicipios.Location = new System.Drawing.Point(12, 40);
+            this.dgvMunicipios.Location = new System.Drawing.Point(13, 161);
             this.dgvMunicipios.Name = "dgvMunicipios";
             this.dgvMunicipios.RowHeadersVisible = false;
             this.dgvMunicipios.Size = new System.Drawing.Size(533, 216);
@@ -130,7 +107,7 @@
             // 
             // txtBuscar
             // 
-            this.txtBuscar.Location = new System.Drawing.Point(144, 8);
+            this.txtBuscar.Location = new System.Drawing.Point(144, 114);
             this.txtBuscar.Name = "txtBuscar";
             this.txtBuscar.Size = new System.Drawing.Size(400, 26);
             this.txtBuscar.TabIndex = 25;
@@ -139,17 +116,83 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(9, 11);
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(9, 117);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(129, 20);
             this.label1.TabIndex = 24;
             this.label1.Text = "Buscar Municipio";
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label9.Location = new System.Drawing.Point(157, 31);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(226, 29);
+            this.label9.TabIndex = 91;
+            this.label9.Text = "Actualizar candidata";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::SiCandi2017.Properties.Resources.NB;
+            this.pictureBox2.Location = new System.Drawing.Point(17, 2);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(95, 82);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 90;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.pictureBox1.Location = new System.Drawing.Point(-1, -1);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(554, 94);
+            this.pictureBox1.TabIndex = 89;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.Image = global::SiCandi2017.Properties.Resources.door2;
+            this.btnSalir.Location = new System.Drawing.Point(175, 413);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(75, 42);
+            this.btnSalir.TabIndex = 31;
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
+            // btnActualizar
+            // 
+            this.btnActualizar.Image = global::SiCandi2017.Properties.Resources.book_edit;
+            this.btnActualizar.Location = new System.Drawing.Point(94, 413);
+            this.btnActualizar.Name = "btnActualizar";
+            this.btnActualizar.Size = new System.Drawing.Size(75, 42);
+            this.btnActualizar.TabIndex = 30;
+            this.btnActualizar.UseVisualStyleBackColor = true;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
+            // 
+            // btnBorrar
+            // 
+            this.btnBorrar.Image = global::SiCandi2017.Properties.Resources.delete;
+            this.btnBorrar.Location = new System.Drawing.Point(12, 413);
+            this.btnBorrar.Name = "btnBorrar";
+            this.btnBorrar.Size = new System.Drawing.Size(76, 42);
+            this.btnBorrar.TabIndex = 29;
+            this.btnBorrar.UseVisualStyleBackColor = true;
+            this.btnBorrar.Click += new System.EventHandler(this.btnBorrar_Click);
+            // 
             // frmBuscarMunicipio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(557, 350);
+            this.BackColor = System.Drawing.Color.Silver;
+            this.ClientSize = new System.Drawing.Size(548, 465);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnActualizar);
             this.Controls.Add(this.btnBorrar);
@@ -159,6 +202,7 @@
             this.Controls.Add(this.txtBuscar);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmBuscarMunicipio";
@@ -166,6 +210,8 @@
             this.Text = "Buscar Municipio";
             this.Load += new System.EventHandler(this.frmBuscarMunicipio_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvMunicipios)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -184,5 +230,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn sDescripcion;
         private System.Windows.Forms.TextBox txtBuscar;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

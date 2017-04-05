@@ -9,9 +9,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>SiCandi2017</RootNamespace>
     <AssemblyName>SiCandi2017</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -146,6 +147,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Vistas\frmActualizarCandidata.resx">
       <DependentUpon>frmActualizarCandidata.cs</DependentUpon>
@@ -188,12 +190,62 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\report.png" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SiCandi_Library\SiCandi_Library.csproj">
       <Project>{42bfa7eb-1213-4c33-a8ce-317dc8284eea}</Project>
       <Name>SiCandi_Library</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CORONA-DE-PRINCESA.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Reportes_2014.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ESCUDO_DE_ARMAS_%28oficial_2015%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\administrator-256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\padlock-lock-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sonora.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fnac25062013eccan13c.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Reportes_20141.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book_edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\door2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-female-user-30390.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-female-user-303901.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-camera-128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magnifier.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

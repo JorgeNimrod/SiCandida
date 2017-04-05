@@ -29,66 +29,149 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.btnCandidatas = new System.Windows.Forms.Button();
             this.btnMunicipio = new System.Windows.Forms.Button();
+            this.btnCandidatas = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(this.btnCandidatas);
             this.groupBox1.Controls.Add(this.btnMunicipio);
-            this.groupBox1.Location = new System.Drawing.Point(-2, 12);
+            this.groupBox1.Controls.Add(this.btnCandidatas);
+            this.groupBox1.Location = new System.Drawing.Point(5, 144);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(239, 271);
+            this.groupBox1.Size = new System.Drawing.Size(569, 177);
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label9.Location = new System.Drawing.Point(153, 31);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(184, 29);
+            this.label9.TabIndex = 91;
+            this.label9.Text = "Elija una opción";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(13, 125);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(90, 20);
+            this.label1.TabIndex = 92;
+            this.label1.Text = "Candidatas";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label2.Location = new System.Drawing.Point(199, 131);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(83, 20);
+            this.label2.TabIndex = 93;
+            this.label2.Text = "Municipios";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label3.Location = new System.Drawing.Point(388, 125);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(75, 20);
+            this.label3.TabIndex = 94;
+            this.label3.Text = "Reportes";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::SiCandi2017.Properties.Resources.NB;
+            this.pictureBox2.Location = new System.Drawing.Point(13, 2);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(95, 82);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 90;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.pictureBox1.Location = new System.Drawing.Point(-5, -1);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(598, 94);
+            this.pictureBox1.TabIndex = 89;
+            this.pictureBox1.TabStop = false;
+            // 
             // button1
             // 
+            this.button1.BackgroundImage = global::SiCandi2017.Properties.Resources.Reportes_20141;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button1.Enabled = false;
-            this.button1.Location = new System.Drawing.Point(6, 181);
+            this.button1.Location = new System.Drawing.Point(383, 19);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(221, 75);
+            this.button1.Size = new System.Drawing.Size(180, 139);
             this.button1.TabIndex = 3;
             this.button1.Tag = "3";
-            this.button1.Text = "REPORTES";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // btnCandidatas
-            // 
-            this.btnCandidatas.Enabled = false;
-            this.btnCandidatas.Location = new System.Drawing.Point(6, 15);
-            this.btnCandidatas.Name = "btnCandidatas";
-            this.btnCandidatas.Size = new System.Drawing.Size(221, 78);
-            this.btnCandidatas.TabIndex = 1;
-            this.btnCandidatas.Tag = "1";
-            this.btnCandidatas.Text = "CANDIDATAS";
-            this.btnCandidatas.UseVisualStyleBackColor = true;
-            this.btnCandidatas.Click += new System.EventHandler(this.btnCandidatas_Click);
-            // 
             // btnMunicipio
             // 
+            this.btnMunicipio.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnMunicipio.BackgroundImage = global::SiCandi2017.Properties.Resources.sonora;
+            this.btnMunicipio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnMunicipio.Enabled = false;
-            this.btnMunicipio.Location = new System.Drawing.Point(6, 99);
+            this.btnMunicipio.Location = new System.Drawing.Point(194, 19);
             this.btnMunicipio.Name = "btnMunicipio";
-            this.btnMunicipio.Size = new System.Drawing.Size(221, 76);
+            this.btnMunicipio.Size = new System.Drawing.Size(180, 139);
             this.btnMunicipio.TabIndex = 2;
             this.btnMunicipio.Tag = "2";
-            this.btnMunicipio.Text = "MUNICIPIOS";
-            this.btnMunicipio.UseVisualStyleBackColor = true;
+            this.btnMunicipio.UseVisualStyleBackColor = false;
             this.btnMunicipio.Click += new System.EventHandler(this.btnMunicipio_Click);
+            // 
+            // btnCandidatas
+            // 
+            this.btnCandidatas.BackgroundImage = global::SiCandi2017.Properties.Resources.fnac25062013eccan13c;
+            this.btnCandidatas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCandidatas.Enabled = false;
+            this.btnCandidatas.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.btnCandidatas.Location = new System.Drawing.Point(8, 16);
+            this.btnCandidatas.Name = "btnCandidatas";
+            this.btnCandidatas.Size = new System.Drawing.Size(180, 142);
+            this.btnCandidatas.TabIndex = 1;
+            this.btnCandidatas.Tag = "1";
+            this.btnCandidatas.UseVisualStyleBackColor = true;
+            this.btnCandidatas.Click += new System.EventHandler(this.btnCandidatas_Click);
             // 
             // frmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(251, 308);
+            this.BackColor = System.Drawing.Color.Silver;
+            this.ClientSize = new System.Drawing.Size(586, 333);
+            this.ControlBox = false;
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximizeBox = false;
@@ -99,7 +182,10 @@
             this.Activated += new System.EventHandler(this.frmMenu_Activated);
             this.Load += new System.EventHandler(this.frmMenu_Load);
             this.groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -109,5 +195,11 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnCandidatas;
         private System.Windows.Forms.Button btnMunicipio;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }

@@ -16,7 +16,7 @@ namespace SiCandi2017
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Vistas.frmLogin());
+            Application.Run(new Vistas.frmMenu());
         }
     }
 }
