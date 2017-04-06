@@ -28,9 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnSalir = new System.Windows.Forms.Button();
-            this.btnActualizar = new System.Windows.Forms.Button();
-            this.btnBorrar = new System.Windows.Forms.Button();
             this.lblRegistros = new System.Windows.Forms.Label();
             this.ckbStatus = new System.Windows.Forms.CheckBox();
             this.dgvDatosCandidata = new System.Windows.Forms.DataGridView();
@@ -47,40 +44,13 @@
             this.label9 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnSalir = new System.Windows.Forms.Button();
+            this.btnActualizar = new System.Windows.Forms.Button();
+            this.btnBorrar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDatosCandidata)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btnSalir
-            // 
-            this.btnSalir.Image = global::SiCandi2017.Properties.Resources.door2;
-            this.btnSalir.Location = new System.Drawing.Point(250, 490);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(109, 43);
-            this.btnSalir.TabIndex = 16;
-            this.btnSalir.UseVisualStyleBackColor = true;
-            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
-            // 
-            // btnActualizar
-            // 
-            this.btnActualizar.Image = global::SiCandi2017.Properties.Resources.book_edit;
-            this.btnActualizar.Location = new System.Drawing.Point(135, 490);
-            this.btnActualizar.Name = "btnActualizar";
-            this.btnActualizar.Size = new System.Drawing.Size(109, 43);
-            this.btnActualizar.TabIndex = 15;
-            this.btnActualizar.UseVisualStyleBackColor = true;
-            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
-            // 
-            // btnBorrar
-            // 
-            this.btnBorrar.Image = global::SiCandi2017.Properties.Resources.delete;
-            this.btnBorrar.Location = new System.Drawing.Point(20, 490);
-            this.btnBorrar.Name = "btnBorrar";
-            this.btnBorrar.Size = new System.Drawing.Size(109, 43);
-            this.btnBorrar.TabIndex = 14;
-            this.btnBorrar.UseVisualStyleBackColor = true;
-            this.btnBorrar.Click += new System.EventHandler(this.btnBorrar_Click);
             // 
             // lblRegistros
             // 
@@ -177,9 +147,9 @@
             // 
             // txtBuscarCandidata
             // 
-            this.txtBuscarCandidata.Location = new System.Drawing.Point(250, 102);
+            this.txtBuscarCandidata.Location = new System.Drawing.Point(282, 102);
             this.txtBuscarCandidata.Name = "txtBuscarCandidata";
-            this.txtBuscarCandidata.Size = new System.Drawing.Size(571, 26);
+            this.txtBuscarCandidata.Size = new System.Drawing.Size(539, 26);
             this.txtBuscarCandidata.TabIndex = 10;
             this.txtBuscarCandidata.TextChanged += new System.EventHandler(this.txtBuscarCandidata_TextChanged);
             // 
@@ -224,6 +194,36 @@
             this.pictureBox1.Size = new System.Drawing.Size(861, 94);
             this.pictureBox1.TabIndex = 89;
             this.pictureBox1.TabStop = false;
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.Image = global::SiCandi2017.Properties.Resources.door2;
+            this.btnSalir.Location = new System.Drawing.Point(250, 490);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(109, 43);
+            this.btnSalir.TabIndex = 16;
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
+            // btnActualizar
+            // 
+            this.btnActualizar.Image = global::SiCandi2017.Properties.Resources.book_edit;
+            this.btnActualizar.Location = new System.Drawing.Point(135, 490);
+            this.btnActualizar.Name = "btnActualizar";
+            this.btnActualizar.Size = new System.Drawing.Size(109, 43);
+            this.btnActualizar.TabIndex = 15;
+            this.btnActualizar.UseVisualStyleBackColor = true;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
+            // 
+            // btnBorrar
+            // 
+            this.btnBorrar.Image = global::SiCandi2017.Properties.Resources.delete;
+            this.btnBorrar.Location = new System.Drawing.Point(20, 490);
+            this.btnBorrar.Name = "btnBorrar";
+            this.btnBorrar.Size = new System.Drawing.Size(109, 43);
+            this.btnBorrar.TabIndex = 14;
+            this.btnBorrar.UseVisualStyleBackColor = true;
+            this.btnBorrar.Click += new System.EventHandler(this.btnBorrar_Click);
             // 
             // frmBuscarCandidata
             // 

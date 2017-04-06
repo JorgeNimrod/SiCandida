@@ -69,7 +69,6 @@ namespace SiCandi2017.Controlador
             }
         }
 
-
         public static Usuario getById(int pkUsuario)
         {
             try
@@ -77,6 +76,132 @@ namespace SiCandi2017.Controlador
                 using (var ctx = new DataModel())
                 {
                     return ctx.Usuarios.Where(r => r.bStatus == true && r.pkUsuario == pkUsuario).FirstOrDefault();
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        public static List<Usuario> Buscars(string valor, Boolean Status)
+        {
+            try
+            {
+                using (var ctx = new DataModel())
+                {
+                    return ctx.Usuarios.Where(r => r.iEmpleadoUsuario == Convert.ToInt32(valor) && r.bStatus == Status).ToList();
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        public static List<Usuario> BuscarporIDLi(Boolean Status)
+        {
+            try
+            {
+
+                using (var ctx = new DataModel())
+                {
+                    return ctx.Usuarios.Where(r => r.bStatus == Status).ToList();
+                }
+
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+        public static List<Rol> getAll2(Boolean status)
+        {
+            try
+            {
+                using (var ctx = new DataModel())
+                {
+                    return ctx.Roles.Where(r => r.bStatus == status).ToList();
+                }
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+        public static Rol getById2(int pkrol)
+        {
+            try
+            {
+                using (var ctx = new DataModel())
+                {
+                    return ctx.Roles.Where(r => r.bStatus == true && r.pkRoles == pkrol).FirstOrDefault();
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        public static void guardar(Usuario nusuario, int pkRoles, int iempleado)
+        {
+            Rol roles = getById2(pkRoles);
+            try
+            {
+                using (var ctx = new DataModel())
+                {
+                    nusuario.fkRoles = roles;
+                    nusuario.iEmpleadoUsuario = iempleado;
+                    ctx.Roles.Attach(roles);
+                    ctx.Entry(nusuario).State = EntityState.Added;
+                    ctx.SaveChanges();
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        public static void Modificar(Usuario nUsuario, int fkRol)
+        {
+            Rol nRol = getById2(fkRol);
+            try
+            {
+                using (var ctx = new DataModel())
+                {
+                    nUsuario.fkRoles = nRol;
+                    ctx.Roles.Attach(nRol);
+                    ctx.Usuarios.Attach(nUsuario);
+                    ctx.Entry(nUsuario).State = EntityState.Modified;
+                    ctx.SaveChanges();
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        public static void Eliminar(int pkUsuario)
+        {
+            try
+            {
+                using (var ctx = new DataModel())
+                {
+                    Usuario nUsuario = ManejoUsuario.getById(pkUsuario);
+                    nUsuario.bStatus = false;
+
+                    ctx.Entry(nUsuario).State = EntityState.Modified;
+                    ctx.SaveChanges();
                 }
             }
             catch (Exception)

@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiCandi_Library", "SiCandi_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiCandi2017", "SiCandi2017\SiCandi2017.csproj", "{94215A17-1BE2-44D2-A621-E5683FBE0678}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiCandiWeb2017", "..\..\Source\Repos\sisCandidatas2017\SisCandidatas-2017\SisCandidatasWeb-2017\SiCandiWeb2017.csproj", "{D90970AD-FD37-490C-852D-B18DA4ED8C7E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiCandiWeb2017", "SiCandiWeb2017\SiCandiWeb2017.csproj", "{D90970AD-FD37-490C-852D-B18DA4ED8C7E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

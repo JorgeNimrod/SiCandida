@@ -66,12 +66,19 @@ namespace SiCandi2017.Vistas
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            frmMenuReportes R = new frmMenuReportes();
+            R.ShowDialog();
         }
 
         private void frmMenu_Activated(object sender, EventArgs e)
         {
             this.ProcesarPermisos();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            frmRegistrarUsuario frm = new frmRegistrarUsuario();
+            frm.ShowDialog();
         }
     }
 }
